@@ -1,6 +1,8 @@
 module or_g(
    input a,b,
-  output y
+  output y,ybar
 );
   assign y=a|b;
+
+  assign ybar=~y;
 endmodule
