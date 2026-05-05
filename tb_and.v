@@ -19,4 +19,9 @@ module tb_and;
   initial begin
     $monitor("a=%0b,b=%0b,y=%0b,ybar=%0b",a,b,y,ybar);
   end
+
+  initial begin
+    $recordfile("database.trn");
+    $recordvars();
+  end
 endmodule
